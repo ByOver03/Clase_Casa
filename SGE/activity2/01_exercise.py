@@ -1,6 +1,6 @@
-word= ""
+word = []
 for i in range(5):
-    word = word.insert(i, input())
+    word.append(input(f"Introduce elemento {i+1}: "))
     print(word)
-word2 = word.reverse()
+word2 = word[::-1]
 print(word2)
