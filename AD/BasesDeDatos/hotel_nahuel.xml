@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hoteles>
+    <hotels>
+        <hotel id_hotel="1">
+            <nombre>San Juan de la Cruz</nombre>
+            <direccion>C/San Juan de la Cruz 123</direccion>
+            <categoria>3*</categoria>
+        </hotel>
+        <hotel id_hotel="2">
+            <nombre>Los Girasoles</nombre>
+            <direccion>Av. Principal 456</direccion>
+            <categoria>4*</categoria>
+        </hotel>
+        <hotel id_hotel="3">
+            <nombre>El Camino</nombre>
+            <direccion>C/Mayor 789</direccion>
+            <categoria>2*</categoria>
+        </hotel>
+        <hotel id_hotel="4">
+            <nombre>Mar Azul</nombre>
+            <direccion>Paseo Marítimo 321</direccion>
+            <categoria>5*</categoria>
+        </hotel>
+    </hotels>
+    <habitacions>
+        <habitacio id_habitacio="1">
+            <numero>101</numero>
+            <capacidad>2</capacidad>
+            <precioNoche>85.50</precioNoche>
+            <tipo>Doble</tipo>
+            <hotelId>1</hotelId>
+        </habitacio>
+        <habitacio id_habitacio="2">
+            <numero>102</numero>
+            <capacidad>1</capacidad>
+            <precioNoche>55.00</precioNoche>
+            <tipo>Individual</tipo>
+            <hotelId>1</hotelId>
+        </habitacio>
+        <habitacio id_habitacio="3">
+            <numero>201</numero>
+            <capacidad>4</capacidad>
+            <precioNoche>120.00</precioNoche>
+            <tipo>Suite</tipo>
+            <hotelId>1</hotelId>
+        </habitacio>
+        <habitacio id_habitacio="4">
+            <numero>103</numero>
+            <capacidad>3</capacidad>
+            <precioNoche>95.75</precioNoche>
+            <tipo>Triple</tipo>
+            <hotelId>2</hotelId>
+        </habitacio>
+    </habitacions>
+    <clients>
+        <client id_cliente="1">
+            <nombre>Juan García López</nombre>
+            <dni>12345678A</dni>
+            <telefono>634567890</telefono>
+            <email>juan.garcia@email.com</email>
+        </client>
+        <client id_cliente="2">
+            <nombre>María Rodríguez Martín</nombre>
+            <dni>87654321B</dni>
+            <telefono>645678901</telefono>
+            <email>maria.rodriguez@email.com</email>
+        </client>
+        <client id_cliente="3">
+            <nombre>Carlos Fernández Sánchez</nombre>
+            <dni>11223344C</dni>
+            <telefono>656789012</telefono>
+            <email>carlos.fernandez@email.com</email>
+        </client>
+        <client id_cliente="4">
+            <nombre>Ana Martínez Pérez</nombre>
+            <dni>55667788D</dni>
+            <telefono>667890123</telefono>
+            <email>ana.martinez@email.com</email>
+        </client>
+    </clients>
+    <reservas>
+        <reserva id_reserva="1">
+            <fechaEntrada>2025-12-10</fechaEntrada>
+            <fechaSalida>2025-12-15</fechaSalida>
+            <precioTotal>427.50</precioTotal>
+            <clienteId>1</clienteId>
+            <habitacionId>1</habitacionId>
+        </reserva>
+        <reserva id_reserva="2">
+            <fechaEntrada>2025-12-12</fechaEntrada>
+            <fechaSalida>2025-12-18</fechaSalida>
+            <precioTotal>330.00</precioTotal>
+            <clienteId>2</clienteId>
+            <habitacionId>2</habitacionId>
+        </reserva>
+        <reserva id_reserva="3">
+            <fechaEntrada>2025-12-20</fechaEntrada>
+            <fechaSalida>2025-12-25</fechaSalida>
+            <precioTotal>600.00</precioTotal>
+            <clienteId>3</clienteId>
+            <habitacionId>3</habitacionId>
+        </reserva>
+        <reserva id_reserva="4">
+            <fechaEntrada>2026-01-05</fechaEntrada>
+            <fechaSalida>2026-01-10</fechaSalida>
+            <precioTotal>478.75</precioTotal>
+            <clienteId>4</clienteId>
+            <habitacionId>4</habitacionId>
+        </reserva>
+    </reservas>
+    <servicios>
+        <servicio id_servicio="1">
+            <nombre>Desayuno Buffet</nombre>
+            <precio>15.00</precio>
+        </servicio>
+        <servicio id_servicio="2">
+            <nombre>Spa Relajante</nombre>
+            <precio>85.50</precio>
+        </servicio>
+        <servicio id_servicio="3">
+            <nombre>Traslado Aeropuerto</nombre>
+            <precio>40.00</precio>
+        </servicio>
+        <servicio id_servicio="4">
+            <nombre>Cena Especial</nombre>
+            <precio>55.00</precio>
+        </servicio>
+    </servicios>
+    <empleados>
+        <empleado id_empleado="1">
+            <nombre>Pedro López Ruiz</nombre>
+            <puesto>Recepcionista</puesto>
+            <salario>1200.00</salario>
+            <hotel_id>1</hotel_id>
+        </empleado>
+        <empleado id_empleado="2">
+            <nombre>Sofia Gutiérrez Serrano</nombre>
+            <puesto>Camarera</puesto>
+            <salario>1100.00</salario>
+            <hotel_id>1</hotel_id>
+        </empleado>
+        <empleado id_empleado="3">
+            <nombre>Roberto Sánchez Díaz</nombre>
+            <puesto>Jefe de Cocina</puesto>
+            <salario>1800.00</salario>
+            <hotel_id>1</hotel_id>
+        </empleado>
+        <empleado id_empleado="4">
+            <nombre>Lucia Moreno Vega</nombre>
+            <puesto>Gerente</puesto>
+            <salario>2000.00</salario>
+            <hotel_id>2</hotel_id>
+        </empleado>
+    </empleados>
+</hoteles>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <autors>
+        <autor id="1">
+            <nom>Brandon Sanderson</nom>
+            <nacionalitat>Estados Unidos</nacionalitat>
+        </autor>
+        <autor id="2">
+            <nom>J.R.R. Tolkien</nom>
+            <nacionalitat>Reino unido</nacionalitat>
+        </autor>
+        <autor id="3">
+            <nom>George R.R. Martin</nom>
+            <nacionalitat>Estados Unidos</nacionalitat>
+        </autor>
+    </autors>
+
+    <llibres>
+        <llibre id ="1" id_autor="1">
+            <titol>Nacidos de la bruma: El imperio final</titol>
+            <any_publicacio>2005</any_publicacio>
+        </llibre>
+        <llibre id ="2" id_autor="1">
+            <titol>El archivo de las tormentas: El camino de los reyes</titol>
+            <any_publicacio>2010</any_publicacio>
+        </llibre>
+        <llibre id ="3" id_autor="2">
+            <titol>El Señor de los anillos: Las 2 Torres</titol>
+            <any_publicacio>1954</any_publicacio>
+        </llibre>
+        <llibre id ="4" id_autor="1">
+            <titol>Elantris</titol>
+            <any_publicacio>2002</any_publicacio>
+        </llibre>
+    </llibres>
+
+    <prestecs>
+        <prestec id="1" id_llibre="1" id_usuari="2">
+            <data_prestec>17/02/2024</data_prestec>
+            <data_devolucio>17/05/2024</data_devolucio>
+        </prestec>
+        <prestec id="2" id_llibre="2" id_usuari="2">
+            <data_prestec>17/02/2024</data_prestec>
+            <data_devolucio>17/10/2024</data_devolucio>
+        </prestec>
+        <prestec id="3" id_llibre="2" id_usuari="3">
+            <data_prestec>20/02/2024</data_prestec>
+            <data_devolucio>30/10/2024</data_devolucio>
+        </prestec>
+        <prestec id="4" id_llibre="3" id_usuari="1">
+            <data_prestec>20/02/2024</data_prestec>
+            <data_devolucio>30/10/2024</data_devolucio>
+        </prestec>
+    </prestecs>
+
+    <usuaris>
+        <usuari id="1">
+            <nom>Maria Garcia</nom>
+            <email>mgarcia@gmail.com</email>
+        </usuari>
+        <usuari id ="2">
+            <nom>Nahuel Robert</nom>
+            <email>nrobert@gmail.com</email>
+        </usuari>
+        <usuari id ="3">
+            <nom>Jan Sintes</nom>
+            <email>jsintes@gmail.com</email>
+        </usuari>
+    </usuaris>
+</biblioteca>
