@@ -1,0 +1,51 @@
+DISCOS
+
+1. Tots els títols de discos: 
+    (/catalog/cd/title)
+2. El penúltim títol: 
+    (/catalog/cd/title)[last()-1]
+3. Els discos que costen menys de 9 euros: 
+    (/catalog/cd[price<9]/title)
+4. Els discos editats al 1987: 
+    (/catalog/cd[year = 1987]/title)
+5. Els discos que costen menys de 8 €: 
+    (/catalog/cd[price<8]/title)
+6. Els discos que costen 9.90 €: 
+    (/catalog/cd[price= 9.90]/title)
+7. L'artista del cinquè disc de la llista: 
+    (/catalog/cd[5]/title)
+8. El país de l'últim disc de la llista: 
+    (/catalog/cd[last()]/country)
+
+UNIVERSITY
+
+9. Títol de les classes que comencen a la 1:10 de la tarda i acaben a les 4h: 
+    //course[time/start_time='01:10PM' and time/end_time='04:00']/title
+10. Els dies que treballa el profe "Wu":
+    //course[instructor="Wu"]/days
+
+NASA
+
+11. Quants conjunts de dades hi ha?
+    count(/datasets/dataset)
+12. Títol de les observacions que es van fer l'any 1986
+    /datasets/dataset[reference/source/other/date/year="1986"]/title
+13. Títol dels conjunts de dades que estan calculades respecte a la "Right ascension 1900 (hours)"
+    
+
+COMICS
+
+14. Quants còmics ha publicat Bang Ediciones?:
+    count(/comics/editorial[@nom="Bang"]/comic)
+15. Quins són els títols dels còmics que ha publicat en Quim Bou a Dolmen?:
+    /comics/editorial[@nom='Dolmen']/comic[volum/dibuix='Quim Bou']/titol
+16. Quins còmics han publicat més de 2 volums a Norma Editorial?:
+    /comics/editorial[@nom= "Norma"]/comic[count(volum)>2]/titol
+17. Quin dels còmics de Glénat té més volums?:
+    /comics/editorial[@nom= "Glenat"]/comic[count(volum)= max(/comics/editorial[@nom="Glenat"]/comic/count(volum))]/titol
+18. Quina editorial que no sigui Glenat ha publicat més còmics? :
+    /comics/editorial[@nom!='Glenat'][count(comic) = max(/comics/editorial[@nom!='Glenat']/count(comic))]/@nom
+19. Quina és la mitjana de còmics publicats per editorial?
+    avg(/comics/editorial/count(comic))
+20. Quines editorials només han publicat un còmic que té definit dibuixant i guionista?:
+    /comics/editorial[count(comic)=1 and comic/dibuix and comic/guio]/@nom
